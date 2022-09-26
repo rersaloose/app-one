@@ -1,0 +1,18 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    text-transform: capitalize;
+}
+
+a:hover {
+    background-color: rgb(193, 193, 190);
+}
+
+.logo {
+    font-size: larger;
+    font-weight: bold;
+}
