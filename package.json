@@ -27,6 +27,9 @@
     "bootstrap": "^5.2.0",
     "bootstrap-icons": "^1.9.1",
     "font-awesome": "^4.7.0",
+    "install": "^0.13.0",
+    "ng-image-slider": "^6.0.0",
+    "npm": "^8.19.2",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"

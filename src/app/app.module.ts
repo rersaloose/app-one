@@ -11,6 +11,10 @@ import { HeroSectionComponent } from './home/home-page/components/hero-section/h
 import { ProjectsCardComponent } from './home/home-page/components/projects-card/projects-card.component';
 import { AboutComponent } from './home/home-page/components/about/about.component';
 import { FooterComponent } from './home/home-page/components/footer/footer.component';
+import { NgImageSliderModule } from 'ng-image-slider';
+import { LoginComponent } from './Admin/login/login/login.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ControlComponent } from './Admin/controlPanal/control/control.component';
 
 @NgModule({
   declarations: [
@@ -20,13 +24,17 @@ import { FooterComponent } from './home/home-page/components/footer/footer.compo
     HeroSectionComponent,
     ProjectsCardComponent,
     AboutComponent,
-    FooterComponent
+    FooterComponent,
+    LoginComponent,
+    ControlComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
