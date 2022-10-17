@@ -1,0 +1,45 @@
+/* small
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+
+/*medium*/
+
+
+/* @media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+} */
+
+
+/*large*/
+
+
+/* @media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+} */
+
+footer {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eee;
+    font-size: 20px;
+}
+
+footer p {
+    color: rgb(120, 120, 120);
+}
+
+footer a {
+    text-decoration: none;
+    font-size: 20px;
+}

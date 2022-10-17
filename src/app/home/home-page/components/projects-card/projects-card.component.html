@@ -1,44 +1,10 @@
 <div class=" container-fluid bg-dark cards" id="projcts">
-    <div class="box">
-        <img src="assets/team-01.jpg">
+    <div class="box" *ngFor="let item of this.product2">
+        <img src="{{item.src}}">
         <div class="caption">
-            <h4 class="fs-2"> Awesome image</h4>
-            <P class="fs-3"> photography</P>
+            <h4 class="fs-2"> {{item.tittle}}</h4>
+            <P class="fs-3">{{item.subtittle}}</P>
         </div>
     </div>
-    <div class="box">
-        <img src="assets/team-02.jpg">
-        <div class="caption">
-            <h4 class="fs-2"> Awesome image</h4>
-            <P class="fs-3"> photography</P>
-        </div>
-    </div>
-    <div class="box">
-        <img src="assets/team-03.jpg">
-        <div class="caption">
-            <h4 class="fs-2"> Awesome image</h4>
-            <P class="fs-3"> photography</P>
-        </div>
-    </div>
-    <div class="box">
-        <img src="assets/team-04.jpg">
-        <div class="caption">
-            <h4 class="fs-2"> Awesome image</h4>
-            <P class="fs-3"> photography</P>
-        </div>
-    </div>
-    <div class="box">
-        <img src="assets/team-05.png">
-        <div class="caption">
-            <h4 class="fs-2"> Awesome image</h4>
-            <P class="fs-3"> photography</P>
-        </div>
-    </div>
-    <div class="box">
-        <img src="assets/team-06.png">
-        <div class="caption">
-            <h4 class="fs-2"> Awesome image</h4>
-            <P class="fs-3"> photography</P>
-        </div>
-    </div>
+
 </div>

@@ -15,6 +15,10 @@ import { NgImageSliderModule } from 'ng-image-slider';
 import { LoginComponent } from './Admin/login/login/login.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ControlComponent } from './Admin/controlPanal/control/control.component';
+import { HeaderTwoComponent } from './Admin/controlPanal/shared/header-two/header-two.component';
+import { FooterTwoComponent } from './Admin/controlPanal/shared/footer-two/footer-two.component';
+import { SidbarTwoComponent } from './Admin/controlPanal/shared/sidbar-two/sidbar-two.component';
+import { SlidSectionComponent } from './home/home-page/components/slid-section/slid-section.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +30,11 @@ import { ControlComponent } from './Admin/controlPanal/control/control.component
     AboutComponent,
     FooterComponent,
     LoginComponent,
-    ControlComponent
+    ControlComponent,
+    HeaderTwoComponent,
+    FooterTwoComponent,
+    SidbarTwoComponent,
+    SlidSectionComponent
   ],
   imports: [
     BrowserModule,
