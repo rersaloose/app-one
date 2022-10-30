@@ -1,0 +1,108 @@
+<div>
+    <div class="table-responsive">
+        <div class="table-wrapper">
+            <div class="table-title">
+                <div class="row d-flex">
+                    <div class="col-sm-10">
+                        <h2>User <b>Management</b></h2>
+                    </div>
+                    <div class="col-sm-2">
+
+                        <button type="button" (click)="clickUser()" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-solid fa-user-plus"></i>
+                      Add User
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <table class="table table-striped table-hover mt-3">
+                <thead>
+                    <tr>
+                        <th scope="col">User Id</th>
+                        <th scope="col">First Name</th>
+                        <th scope="col">Last Name</th>
+                        <th scope="col">Email Id</th>
+                        <th scope="col">Mobil No</th>
+                        <th scope="col">Salary</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let user of usersData">
+                        <td>{{user.id}}</td>
+                        <td>{{user.firstName}}</td>
+                        <td>{{user.lastName}}</td>
+                        <td>{{user.Email}}</td>
+                        <td>{{user.Mobil}}</td>
+                        <td>{{user.salary}}</td>
+                        <td>
+                            <button type="button" (click)="onEdit(user)" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-info">Edit</button>
+                            <button (click)="  deleteUser(user)" class="btn btn-danger"> Delete</button>
+                        </td>
+
+                </tbody>
+            </table>
+            <div class="clearfix">
+                <div class="hint-text">Showing <b>5</b> out of <b>25</b> entries</div>
+                <ul class="pagination">
+                    <li class="page-item disabled"><a href="#">Previous</a></li>
+                    <li class="page-item"><a href="#" class="page-link">1</a></li>
+                    <li class="page-item"><a href="#" class="page-link">2</a></li>
+                    <li class="page-item active"><a href="#" class="page-link">3</a></li>
+                    <li class="page-item"><a href="#" class="page-link">4</a></li>
+                    <li class="page-item"><a href="#" class="page-link">5</a></li>
+                    <li class="page-item"><a href="#" class="page-link">Next</a></li>
+                </ul>
+            </div>
+
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form [formGroup]='formValue'>
+                                <!-- <div class="mb-3">
+                                    <label for="user-id" class="form-label">User Id</label>
+                                    <input type="number" class="form-control" id="user-id" aria-describedby="emailHelp">
+
+                                </div> -->
+                                <div class="mb-3">
+                                    <label for="firstName" class="form-label">First Name:</label>
+                                    <input type="text" formControlName="firstName" class="form-control" id="firstName">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="lastName" class="form-label">Last Name:</label>
+                                    <input type="text" formControlName="lastName" class="form-control" id="lastName">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="EmailId" class="form-label">Email Id:</label>
+                                    <input type="email" formControlName="Email" class="form-control" id="EmailId">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="mobil" class="form-label">Mobil No:</label>
+                                    <input type="number" formControlName="mobil" class="form-control" id="mobil">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="salary" class="form-label">Salary:</label>
+                                    <input type="number" formControlName="salary" class="form-control" id="salary">
+                                </div>
+
+
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" id="cancel" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" *ngIf="showAdd" (click)="postUser()" class="btn btn-primary">Add</button>
+                            <button type="button" *ngIf="showUpdate" (click)="UPdateUser()" class="btn btn-primary">UPdate</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

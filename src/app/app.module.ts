@@ -19,6 +19,10 @@ import { HeaderTwoComponent } from './Admin/controlPanal/shared/header-two/heade
 import { FooterTwoComponent } from './Admin/controlPanal/shared/footer-two/footer-two.component';
 import { SidbarTwoComponent } from './Admin/controlPanal/shared/sidbar-two/sidbar-two.component';
 import { SlidSectionComponent } from './home/home-page/components/slid-section/slid-section.component';
+import { NextDirective } from './Directive/next.directive';
+import { PrevDirective } from './Directive/prev.directive';
+import { UsersComponent } from './Admin/controlPanal/Components/users/users.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -34,14 +38,19 @@ import { SlidSectionComponent } from './home/home-page/components/slid-section/s
     HeaderTwoComponent,
     FooterTwoComponent,
     SidbarTwoComponent,
-    SlidSectionComponent
+    SlidSectionComponent,
+    NextDirective,
+    PrevDirective,
+    UsersComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+     NgImageSliderModule,
+     ReactiveFormsModule
 
   ],
   providers: [],

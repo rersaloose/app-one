@@ -1,0 +1,36 @@
+/* .slider-Wrap {
+    overflow: hidden;
+}
+
+.slider-main {
+    width: 200%;
+}
+
+.item {
+    display: inline-block;
+    width: 315px;
+    height: 150px;
+    text-align: center;
+    margin: 0 10px;
+    color: white;
+}
+
+.item img {
+    width: 100%;
+}
+
+.item h2 {
+    padding: 20px;
+}
+
+.next {
+    position: absolute;
+    right: 0;
+    bottom: -444%;
+}
+
+.Prev {
+    position: absolute;
+    left: 0;
+    bottom: -444%;
+} */
