@@ -1,50 +1,60 @@
 <div>
     <div class="table-responsive">
         <div class="table-wrapper">
-            <div class="table-title">
-                <div class="row d-flex">
-                    <div class="col-sm-10">
-                        <h2>User <b>Management</b></h2>
+            <div class="table-title table-bordered">
+                <div class="header  ">
+                    <div>
+                        <h1>Users</h1>
                     </div>
-                    <div class="col-sm-2">
 
-                        <button type="button" (click)="clickUser()" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-solid fa-user-plus"></i>
-                      Add User
+                    <div>
+                        <button type="button" (click)="clickUser()" class="btn btn-primary create" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                          <i class="fa fa-solid fa-user-plus"></i>
+                   Create
                         </button>
                     </div>
                 </div>
             </div>
-            <table class="table table-striped table-hover mt-3">
-                <thead>
+
+            <table class="table table-bordered table-hover mt-3 ">
+                <thead class="table-dark"> class="fs-2"
                     <tr>
-                        <th scope="col">User Id</th>
-                        <th scope="col">First Name</th>
-                        <th scope="col">Last Name</th>
-                        <th scope="col">Email Id</th>
-                        <th scope="col">Mobil No</th>
-                        <th scope="col">Salary</th>
-                        <th scope="col">Action</th>
+                        <th scope="col" class="fs-3">User Id</th>
+                        <th scope="col" class="fs-3">First Name</th>
+                        <th scope="col" class="fs-3">Last Name</th>
+                        <th scope="col" class="fs-3">Email</th>
+                        <th scope="col" class="fs-3">Mobil No</th>
+                        <th scope="col" class="fs-3">Salary</th>
+                        <th scope="col" class="fs-3">Action</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody class="table-group-divider">
                     <tr *ngFor="let user of usersData">
-                        <td>{{user.id}}</td>
-                        <td>{{user.firstName}}</td>
-                        <td>{{user.lastName}}</td>
-                        <td>{{user.Email}}</td>
-                        <td>{{user.Mobil}}</td>
-                        <td>{{user.salary}}</td>
+                        <td class="fs-4">{{user.id}}</td>
+                        <td class="fs-4">{{user.firstName}}</td>
+                        <td class="fs-4">{{user.lastName}}</td>
+                        <td class="fs-4">{{user.Email}}</td>
+                        <td class="fs-4">{{user.Mobil}}</td>
+                        <td class="fs-4">{{user.salary}}</td>
                         <td>
-                            <button type="button" (click)="onEdit(user)" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-info">Edit</button>
-                            <button (click)="  deleteUser(user)" class="btn btn-danger"> Delete</button>
+                            <button type="button" (click)="onEdit(user)" class="btn btn-primary tatn fs-5" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-solid fa-user-pen"></i> Edit</button>
+                            <button (click)="  deleteUser(user)" class="btn btn-danger tatn fs-5"> Delete</button>
                         </td>
-
+                        <tr class="table-dark">
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
                 </tbody>
             </table>
-            <div class="clearfix">
-                <div class="hint-text">Showing <b>5</b> out of <b>25</b> entries</div>
-                <ul class="pagination">
-                    <li class="page-item disabled"><a href="#">Previous</a></li>
+            <div class="clearfix text-center">
+                <div class="hint-text fs-5">Showing <b>5</b> out of <b>25</b> entries</div>
+                <ul class="pagination justify-content-center py-3">
+                    <li class="page-item "><a href="#" class="page-link ">Previous</a></li>
                     <li class="page-item"><a href="#" class="page-link">1</a></li>
                     <li class="page-item"><a href="#" class="page-link">2</a></li>
                     <li class="page-item active"><a href="#" class="page-link">3</a></li>
@@ -61,44 +71,40 @@
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                            <h1 class="modal-title fs-2" id="exampleModalLabel">Users Details</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
                             <form [formGroup]='formValue'>
-                                <!-- <div class="mb-3">
-                                    <label for="user-id" class="form-label">User Id</label>
-                                    <input type="number" class="form-control" id="user-id" aria-describedby="emailHelp">
 
-                                </div> -->
                                 <div class="mb-3">
-                                    <label for="firstName" class="form-label">First Name:</label>
-                                    <input type="text" formControlName="firstName" class="form-control" id="firstName">
+                                    <label for="firstName" class="form-label fs-4">First Name:</label>
+                                    <input type="text" formControlName="firstName" class="form-control fs-3" id="firstName">
                                 </div>
                                 <div class="mb-3">
-                                    <label for="lastName" class="form-label">Last Name:</label>
-                                    <input type="text" formControlName="lastName" class="form-control" id="lastName">
+                                    <label for="lastName" class="form-label fs-4">Last Name:</label>
+                                    <input type="text" formControlName="lastName" class="form-control fs-3" id="lastName">
                                 </div>
                                 <div class="mb-3">
-                                    <label for="EmailId" class="form-label">Email Id:</label>
-                                    <input type="email" formControlName="Email" class="form-control" id="EmailId">
+                                    <label for="EmailId" class="form-label fs-4">Email Id:</label>
+                                    <input type="email" formControlName="Email" class="form-control fs-3 " id="EmailId">
                                 </div>
                                 <div class="mb-3">
-                                    <label for="mobil" class="form-label">Mobil No:</label>
-                                    <input type="number" formControlName="mobil" class="form-control" id="mobil">
+                                    <label for="mobil" class="form-label fs-4 ">Mobil No:</label>
+                                    <input type="number" formControlName="mobil" class="form-control fs-3" id="mobil">
                                 </div>
                                 <div class="mb-3">
-                                    <label for="salary" class="form-label">Salary:</label>
-                                    <input type="number" formControlName="salary" class="form-control" id="salary">
+                                    <label for="salary" class="form-label fs-4">Salary:</label>
+                                    <input type="number" formControlName="salary" class="form-control fs-3" id="salary">
                                 </div>
 
 
                             </form>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" id="cancel" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" *ngIf="showAdd" (click)="postUser()" class="btn btn-primary">Add</button>
-                            <button type="button" *ngIf="showUpdate" (click)="UPdateUser()" class="btn btn-primary">UPdate</button>
+                            <button type="button" id="cancel" class="btn btn-secondary py-2 fs-5" data-bs-dismiss="modal">Close</button>
+                            <button type="button" *ngIf="showAdd" (click)="postUser()" class="btn btn-primary py-2 fs-5">Add</button>
+                            <button type="button" *ngIf="showUpdate" (click)="UPdateUser()" class="btn btn-primary py-2 fs-5">UPdate</button>
                         </div>
                     </div>
                 </div>

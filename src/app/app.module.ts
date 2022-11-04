@@ -50,7 +50,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     BrowserAnimationsModule,
     HttpClientModule,
      NgImageSliderModule,
-     ReactiveFormsModule
+     ReactiveFormsModule,
+
 
   ],
   providers: [],
