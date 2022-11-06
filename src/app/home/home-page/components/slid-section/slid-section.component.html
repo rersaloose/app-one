@@ -65,24 +65,20 @@
 
     </div>
 </section> -->
-<!-- <ng-image-slider>
-    <div class="item" *ngFor="let item of imgCollection">
-        <img src="{{item.src}}" alt="">
-        <h2>{{item.tittle}}</h2>
-        <p>{{item.subtittle}}</p>
-    </div>
-</ng-image-slider> -->
-<div class="row">
+<div class="bg-dark ">
+    <ng-image-slider [images]="imageObject" #nav></ng-image-slider>
+</div>
+<!-- <div class="row">
     <div class="col-md-9  mx-auto">
         <h2><span>Thumbnail <b>Carousel</b></span></h2>
         <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
-            <!-- Carousel indicators -->
+             Carousel indicators
             <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class=""></li>
                 <li data-target="#myCarousel" data-slide-to="1" class=""></li>
                 <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
             </ol>
-            <!-- Wrapper for carousel items -->
+
             <div class="carousel-inner">
                 <div class="carousel-item">
                     <div class="row">
@@ -124,7 +120,7 @@
                     </div>
                 </div>
             </div>
-            <!-- Carousel controls -->
+
             <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
                 <i class="fa fa-chevron-left"></i>
             </a>
@@ -133,4 +129,4 @@
             </a>
         </div>
     </div>
-</div>
+</div> -->
