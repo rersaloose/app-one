@@ -11,15 +11,16 @@ const routes: Routes = [
   {
     path: 'control',
     component: ControlComponent,
-  },
-  {
-    path: 'user',
-    component: UsersComponent,
-  },
+    children:[
+      {path:"user", component:UsersComponent}
+    ]
+
+  }
+
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }

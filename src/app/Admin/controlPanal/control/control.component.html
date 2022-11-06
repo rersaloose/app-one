@@ -1,21 +1,28 @@
-<div class="row">
-    <div class="col-2 p-0 ">
+<div class="row ">
+    <div class="col-2 ">
         <app-sidbar-two></app-sidbar-two>
     </div>
-    <div class="col-10 p-0">
-        <app-header-two></app-header-two>
+
+    <div class="col-10 ps-0  me-0 ">
+        <div class="row">
+            <div class="col-12">
+                <app-header-two></app-header-two>
+            </div>
+        </div>
+
+        <div class="row" style="height: 83%;">
+            <div class="col-12">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-12">
+                <app-footer-two></app-footer-two>
+            </div>
+
+        </div>
     </div>
-
-    <div class="col-10">
-        <router-outlet></router-outlet>
-    </div>
-
-    <div class="col-10">
-        <app-footer-two></app-footer-two>
-    </div>
-
-
-
-
 
 </div>
