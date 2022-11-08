@@ -17,14 +17,6 @@
       "salary": 13.02
     },
     {
-      "id": 3,
-      "firstName": "Ahmed",
-      "lastName": "Shaltout",
-      "Email": "itshaltout@gamil.com",
-      "Mobil": 1235866,
-      "salary": 12
-    },
-    {
       "id": 4,
       "firstName": "Adel",
       "lastName": "Samy",
@@ -47,17 +39,23 @@
       "Email": "esdsedse@gmail.co",
       "Mobil": 231233,
       "salary": 21213132
-    },
-    {
-      "id": 7,
-      "firstName": "zaina",
-      "lastName": "Esalous",
-      "Email": "esdsedse@gmail.co",
-      "Mobil": 43245,
-      "salary": 45645
     }
   ],
   "comments": [],
+  "products": [
+    {
+      "src": "assets/team-01.jpg",
+      "tittle": "erer",
+      "subTittle": null,
+      "id": 1
+    },
+    {
+      "src": "\"assets/team-01.jpg\"",
+      "tittle": "jkhjkh",
+      "subTittle": null,
+      "id": 2
+    }
+  ],
   "profile": {
     "name": "typicode"
   }

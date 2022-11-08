@@ -6,8 +6,8 @@ import { map } from 'rxjs/operators'
   providedIn: 'root'
 })
 export class APIService {
-
   constructor(private http:HttpClient) { }
+
   postUser(data:any){
     return this.http.post<any>("http://localhost:3000/posts",data)
     .pipe(map((res:any)=>{

@@ -23,6 +23,7 @@ import { NextDirective } from './Directive/next.directive';
 import { PrevDirective } from './Directive/prev.directive';
 import { UsersComponent } from './Admin/controlPanal/Components/users/users.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ProductComponent } from './Admin/controlPanal/Components/product/product.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     SlidSectionComponent,
     NextDirective,
     PrevDirective,
-    UsersComponent
+    UsersComponent,
+    ProductComponent
   ],
   imports: [
     BrowserModule,

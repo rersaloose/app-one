@@ -52,7 +52,7 @@ export class UsersComponent implements OnInit {
       this.usersData = res;
     });
   }
-  deleteUser(user: any) {
+  deleteUser(user:any) {
     this.api.deleteUser(user.id).subscribe((res) => {
       alert('User IS Deleted');
       this.getAlluser();

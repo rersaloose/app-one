@@ -1,3 +1,4 @@
+import { ProductComponent } from './Admin/controlPanal/Components/product/product.component';
 import { ControlComponent } from './Admin/controlPanal/control/control.component';
 import { LoginComponent } from './Admin/login/login/login.component';
 import { HomePageComponent } from './home/home-page/home-page.component';
@@ -12,7 +13,8 @@ const routes: Routes = [
     path: 'control',
     component: ControlComponent,
     children:[
-      {path:"user", component:UsersComponent}
+      {path:"user", component:UsersComponent},
+      {path:"products",component:ProductComponent}
     ]
 
   }

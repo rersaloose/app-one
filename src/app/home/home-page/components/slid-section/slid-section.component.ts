@@ -19,7 +19,7 @@ export class SlidSectionComponent implements OnInit {
       this.imageObject.push({
         image: element.src,
         thumbImage: element.src,
-        alt: element.subtittle,
+        alt: element.subTittle,
         title: element.tittle
       })
     }
