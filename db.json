@@ -1,62 +1,60 @@
 {
-  "posts": [
-    {
-      "id": 1,
-      "firstName": "Admin",
-      "lastName": "Admin",
-      "Email": "Admin@Gmail.Com",
-      "Mobil": 96623541,
-      "salary": 120.55
-    },
-    {
-      "id": 2,
-      "firstName": "Eslam",
-      "lastName": "Esalous",
-      "Email": "esdse@gmail.com",
-      "Mobil": 1258963,
-      "salary": 13.02
-    },
-    {
-      "id": 4,
-      "firstName": "Adel",
-      "lastName": "Samy",
-      "Email": "Adel.Samy@gmail.com",
-      "Mobil": 12589633,
-      "salary": 251544
-    },
-    {
-      "id": 5,
-      "firstName": "Eslam",
-      "lastName": "Esalous",
-      "Email": "esdsedse@gmail.co",
-      "Mobil": 1111111111,
-      "salary": 22222222222
-    },
-    {
-      "id": 6,
-      "firstName": "edd",
-      "lastName": "Esalous",
-      "Email": "esdsedse@gmail.co",
-      "Mobil": 231233,
-      "salary": 21213132
+    "posts": [{
+            "id": 1,
+            "firstName": "Admin",
+            "lastName": "Admin",
+            "Email": "Admin@Gmail.Com",
+            "Mobil": 96623541,
+            "salary": 120.55
+        },
+        {
+            "id": 2,
+            "firstName": "Eslam",
+            "lastName": "Esalous",
+            "Email": "esdse@gmail.com",
+            "Mobil": 1258963,
+            "salary": 13.02
+        },
+        {
+            "id": 4,
+            "firstName": "Adel",
+            "lastName": "Samy",
+            "Email": "Adel.Samy@gmail.com",
+            "Mobil": 12589633,
+            "salary": 251544
+        },
+        {
+            "id": 5,
+            "firstName": "Eslam",
+            "lastName": "Esalous",
+            "Email": "esdsedse@gmail.co",
+            "Mobil": 1111111111,
+            "salary": 22222222222
+        },
+        {
+            "id": 6,
+            "firstName": "edd",
+            "lastName": "Esalous",
+            "Email": "esdsedse@gmail.co",
+            "Mobil": 231233,
+            "salary": 21213132
+        }
+    ],
+    "comments": [],
+    "products": [{
+            "src": "assets/team-01.jpg",
+            "tittle": "erer",
+            "subTittle": null,
+            "id": 1
+        },
+        {
+            "src": "assets/team-04.jpg",
+            "tittle": "jkhjkh",
+            "subTittle": null,
+            "id": 2
+        }
+    ],
+    "profile": {
+        "name": "typicode"
     }
-  ],
-  "comments": [],
-  "products": [
-    {
-      "src": "assets/team-01.jpg",
-      "tittle": "erer",
-      "subTittle": null,
-      "id": 1
-    },
-    {
-      "src": "\"assets/team-01.jpg\"",
-      "tittle": "jkhjkh",
-      "subTittle": null,
-      "id": 2
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
 }
