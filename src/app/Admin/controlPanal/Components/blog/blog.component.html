@@ -4,7 +4,7 @@
           <div class="table-title table-bordered">
               <div class="header  ">
                   <div>
-                      <h1>Products:</h1>
+                      <h1> My Blog:</h1>
                   </div>
 
                   <div>
@@ -19,7 +19,7 @@
           <table class="table table-bordered table-hover  ">
               <thead class="table-dark fs-2">
                   <tr>
-                      <th scope="col" class="fs-3">Product Id:</th>
+                      <th scope="col" class="fs-3">Blog Id:</th>
                       <th scope="col" class="fs-3">Src:</th>
                       <th scope="col" class="fs-3">Tittle:</th>
                       <th scope="col" class="fs-3">SubTittle:</th>
@@ -30,16 +30,17 @@
               <tbody class="table-group-divider">
                   <tr *ngFor="let blog of blogData">
                       <td class="fs-4">{{blog.id}}</td>
-                      <td> <img src={{blog.src}}></td>
+                      <td> <img src="{{blog.src}}"></td>
                       <td class="fs-4">{{blog.tittle}}</td>
                       <td class="fs-4 ">{{blog.subTittle}}</td>
-                      <td class="fs-4 ">{{blog.date}</td>
+                      <td class="fs-4 ">{{blog.date}}</td>
 
                       <td>
                           <button type="button" (click)="onEdit(blog)" class="btn btn-primary tatn fs-5" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-solid fa-user-pen"></i> Edit</button>
                           <button (click)="  Deleteblog(blog)" class="btn btn-danger tatn fs-5"> Delete</button>
                       </td>
                       <tr class="table-dark">
+                          <td></td>
                           <td></td>
                           <td></td>
                           <td></td>

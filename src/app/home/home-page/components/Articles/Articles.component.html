@@ -9,13 +9,13 @@
 <div class="row row-cols-1 row-cols-md-3 g-4">
   <div class="col" *ngFor="let item of blogObject">
     <div class="card h-100">
-      <img src={{item.src}} class="card-img-top" alt="...">
+      <img src="{{item.src}}" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">{{item.tittle}}</h5>
         <p class="card-text">{{item.subTittle}}</p>
       </div>
       <div class="card-footer">
-        <small class="text-muted">{{item.date|date:'short'}</small>
+        <small class="text-muted">{{item.date}}</small>
       </div>
     </div>
   </div>
