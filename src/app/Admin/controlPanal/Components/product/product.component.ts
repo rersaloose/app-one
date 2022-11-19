@@ -1,4 +1,4 @@
-import { ProService } from './../../../../services/pro.service';
+import { ProService } from '../../../../services/product.service';
 import { Product } from './../../../../home/home-page/components/Model/Products';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
@@ -23,28 +23,26 @@ showUpdate!:boolean
      tittle:[""],
      subTittle:[""],
     });
-    this.GetPro()
+    this.GetProduct()
   }
   clickUser() {
     this.formValue.reset();
     this.showAdd = true;
     this.showUpdate = false;
   }
-PostPro(){
+PostProduct(){
   this.proObject.src=this.formValue.value.Src;
   this.proObject.tittle=this.formValue.value.tittle;
   this.proObject.subTittle=this.formValue.value.subTittle;
-  this.ProService.postProduct(this.proObject).subscribe((res)=>{
+  this.ProService.postProduct(this.proObject).subscribe((res:any)=>{
     console.log(res);
     alert("Add New Product")
     this.formValue.reset();
-    var cancel=document.getElementById("cancel");
-    cancel?.click();
-    this.GetPro();
+
   })
 
 }
-GetPro(){
+GetProduct(){
 this.ProService.getProduct().subscribe((res)=>{
   this.proData=res
 })
@@ -57,7 +55,6 @@ onEdit(pro:Product){
   this.formValue.controls['Src'].setValue(pro.src);
   this.formValue.controls['tittle'].setValue(pro.tittle);
   this.formValue.controls['subTittle'].setValue(pro.subTittle);
-
 }
 UPdatePro(){
   this.showUpdate = true;
@@ -66,18 +63,18 @@ UPdatePro(){
   this.proObject.tittle=this.formValue.value.tittle;
   this.proObject.subTittle=this.formValue.value.subTittle;
   this.ProService.updateProduct(this.proObject,this.proObject.id)
-  .subscribe((res)=>{
+  .subscribe((res:any)=>{
     console.log(res);
     alert("UpDate Your Product");
     var cancel=document.getElementById("cancel");
     cancel?.click();
-    this.GetPro();
+    this.GetProduct();
   })
 }
 DeletePro(pro:Product){
-  this.ProService.DeleteProduct(pro.id).subscribe((res)=>{
+  this.ProService.DeleteProduct(pro.id).subscribe((res:any)=>{
     alert('Your Product is Deleted')
-    this.GetPro();
+    this.GetProduct();
   })
 
 }

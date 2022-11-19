@@ -1,5 +1,5 @@
-import { UsersModal } from './../Modal/Users.Modal';
-import { APIService } from './../../shared/api.service';
+import { UsersModal } from '../../../../home/home-page/components/Model/Users.Modal';
+import { APIService } from '../../../../services/api.service';
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder } from '@angular/forms';
 

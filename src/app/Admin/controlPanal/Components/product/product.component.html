@@ -16,13 +16,13 @@
                 </div>
             </div>
 
-            <table class="table table-bordered table-hover mt-3 ">
-                <thead class="table-dark"> class="fs-2"
+            <table class="table table-bordered table-hover  ">
+                <thead class="table-dark fs-2">
                     <tr>
                         <th scope="col" class="fs-3">Product Id</th>
                         <th scope="col" class="fs-3">Src</th>
                         <th scope="col" class="fs-3">Tittle</th>
-                        <th scope="col" class="fs-3">SubTitle</th>
+                        <th scope="col" class="fs-3">SubTittle</th>
                         <th scope="col" class="fs-3">Action</th>
                     </tr>
                 </thead>
@@ -81,15 +81,15 @@
                                     <input type="text" formControlName="tittle" class="form-control fs-3" id="tittle">
                                 </div>
                                 <div class="mb-3">
-                                    <label for=" subTittle" class="form-label fs-4"> subTittle:</label>
-                                    <input type="text" formControlName=" subTittle" class="form-control fs-3 " id=" subTittle">
+                                    <label for=" subTittle" class="form-label fs-4"> SubTittle:</label>
+                                    <input type="text" formControlName="subTittle" class="form-control fs-3 " id=" subTittle">
                                 </div>
 
                             </form>
                         </div>
                         <div class="modal-footer">
                             <button type="button" id="cancel" class="btn btn-secondary py-2 fs-5" data-bs-dismiss="modal">Close</button>
-                            <button type="button" *ngIf="showAdd" (click)="PostPro()" class="btn btn-primary py-2 fs-5">Add</button>
+                            <button type="button" *ngIf="showAdd" (click)="PostProduct()" class="btn btn-primary py-2 fs-5">Add</button>
                             <button type="button" *ngIf="showUpdate" (click)="UPdatePro()" class="btn btn-primary py-2 fs-5">UPdate</button>
                         </div>
                     </div>

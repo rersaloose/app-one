@@ -38,22 +38,19 @@
             "Email": "esdsedse@gmail.co",
             "Mobil": 231233,
             "salary": 21213132
+        },
+        {
+            "id": 7,
+            "firstName": "Eslam",
+            "lastName": "Esalous",
+            "Email": "esdsedse@gmail.co",
+            "Mobil": 1524,
+            "salary": 2566
         }
     ],
     "comments": [],
-    "products": [{
-            "src": "assets/team-01.jpg",
-            "tittle": "erer",
-            "subTittle": null,
-            "id": 1
-        },
-        {
-            "src": "assets/team-04.jpg",
-            "tittle": "jkhjkh",
-            "subTittle": null,
-            "id": 2
-        }
-    ],
+    "products": [],
+    "Articles": [],
     "profile": {
         "name": "typicode"
     }

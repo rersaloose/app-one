@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -18,12 +17,12 @@ import { ControlComponent } from './Admin/controlPanal/control/control.component
 import { HeaderTwoComponent } from './Admin/controlPanal/shared/header-two/header-two.component';
 import { FooterTwoComponent } from './Admin/controlPanal/shared/footer-two/footer-two.component';
 import { SidbarTwoComponent } from './Admin/controlPanal/shared/sidbar-two/sidbar-two.component';
-import { SlidSectionComponent } from './home/home-page/components/slid-section/slid-section.component';
-import { NextDirective } from './Directive/next.directive';
-import { PrevDirective } from './Directive/prev.directive';
+import { SlidSectionComponent } from './home/home-page/components/slider-section/slider-section.component';
 import { UsersComponent } from './Admin/controlPanal/Components/users/users.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ProductComponent } from './Admin/controlPanal/Components/product/product.component';
+import { BlogComponent } from './Admin/controlPanal/Components/blog/blog.component';
+
 
 @NgModule({
   declarations: [
@@ -40,10 +39,13 @@ import { ProductComponent } from './Admin/controlPanal/Components/product/produc
     FooterTwoComponent,
     SidbarTwoComponent,
     SlidSectionComponent,
-    NextDirective,
-    PrevDirective,
+
+
     UsersComponent,
-    ProductComponent
+    ProductComponent,
+    BlogComponent,
+
+
   ],
   imports: [
     BrowserModule,

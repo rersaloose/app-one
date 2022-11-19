@@ -1,6 +1,7 @@
 
 import { Component, OnInit } from '@angular/core';
-import { SlidService } from 'src/app/services/slid.service';
+import { ProService } from 'src/app/services/product.service';
+
 
 
 @Component({
@@ -11,10 +12,12 @@ import { SlidService } from 'src/app/services/slid.service';
 
 export class ProjectsCardComponent implements OnInit {
  product2:any=[];
-  constructor(private slid:SlidService) {}
+  constructor(private product:ProService) {}
 
   ngOnInit(): void {
-this.product2 = this.slid.products
+ this.product.getProduct().subscribe((e:any)=>{
+this.product2=e
+})
 console.log(this.product2)
   }
 

@@ -1,0 +1,106 @@
+<div>
+  <div class="table-responsive">
+      <div class="table-wrapper">
+          <div class="table-title table-bordered">
+              <div class="header  ">
+                  <div>
+                      <h1>Products:</h1>
+                  </div>
+
+                  <div>
+                      <button type="button" (click)="clickUser()" class="btn btn-primary create" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <i class="fa fa-solid fa-user-plus"></i>
+               Create
+                    </button>
+                  </div>
+              </div>
+          </div>
+
+          <table class="table table-bordered table-hover  ">
+              <thead class="table-dark fs-2">
+                  <tr>
+                      <th scope="col" class="fs-3">Product Id:</th>
+                      <th scope="col" class="fs-3">Src:</th>
+                      <th scope="col" class="fs-3">Tittle:</th>
+                      <th scope="col" class="fs-3">SubTittle:</th>
+                      <th scope="col" class="fs-3">Date:</th>
+                      <th scope="col" class="fs-3">Action</th>
+                  </tr>
+              </thead>
+              <tbody class="table-group-divider">
+                  <tr *ngFor="let blog of blogData">
+                      <td class="fs-4">{{blog.id}}</td>
+                      <td> <img src={{blog.src}}></td>
+                      <td class="fs-4">{{blog.tittle}}</td>
+                      <td class="fs-4 ">{{blog.subTittle}}</td>
+                      <td class="fs-4 ">{{blog.date}</td>
+
+                      <td>
+                          <button type="button" (click)="onEdit(blog)" class="btn btn-primary tatn fs-5" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-solid fa-user-pen"></i> Edit</button>
+                          <button (click)="  Deleteblog(blog)" class="btn btn-danger tatn fs-5"> Delete</button>
+                      </td>
+                      <tr class="table-dark">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                      </tr>
+              </tbody>
+          </table>
+          <div class="clearfix text-center">
+              <div class="hint-text fs-5">Showing <b>5</b> out of <b>25</b> entries</div>
+              <ul class="pagination justify-content-center py-3">
+                  <li class="page-item "><a href="#" class="page-link ">Previous</a></li>
+                  <li class="page-item"><a href="#" class="page-link">1</a></li>
+                  <li class="page-item"><a href="#" class="page-link">2</a></li>
+                  <li class="page-item active"><a href="#" class="page-link">3</a></li>
+                  <li class="page-item"><a href="#" class="page-link">4</a></li>
+                  <li class="page-item"><a href="#" class="page-link">5</a></li>
+                  <li class="page-item"><a href="#" class="page-link">Next</a></li>
+              </ul>
+          </div>
+
+
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h1 class="modal-title fs-2" id="exampleModalLabel">Product Details</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                          <form [formGroup]='formValue'>
+
+                              <div class="mb-3">
+                                  <label for="Src" class="form-label fs-4">Src:</label>
+                                  <input type="text" formControlName="Src" class="form-control fs-3" id="Src">
+                              </div>
+                              <div class="mb-3">
+                                  <label for="tittle" class="form-label fs-4">tittle:</label>
+                                  <input type="text" formControlName="tittle" class="form-control fs-3" id="tittle">
+                              </div>
+                              <div class="mb-3">
+                                  <label for=" subTittle" class="form-label fs-4"> SubTittle:</label>
+                                  <input type="text" formControlName="saubTittle" class="form-control fs-3 " id=" subTittle">
+                              </div>
+                              <div class="mb-3">
+                                  <label for=" date" class="form-label fs-4"> Date:</label>
+                                  <input type="date" formControlName="date" class="form-control fs-3 " id=" date">
+                              </div>
+
+                          </form>
+                      </div>
+                      <div class="modal-footer">
+                          <button type="button" id="cancel" class="btn btn-secondary py-2 fs-5" data-bs-dismiss="modal">Close</button>
+                          <button type="button" *ngIf="showAdd" (click)="postBlog()" class="btn btn-primary py-2 fs-5">Add</button>
+                          <button type="button" *ngIf="showUpdate" (click)="UPdateblog()" class="btn btn-primary py-2 fs-5">UPdate</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
