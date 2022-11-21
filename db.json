@@ -56,6 +56,42 @@
       "tittle": "ASDASD",
       "subTittle": "ASD",
       "id": 1
+    },
+    {
+      "src": "\"assets/articles1.jpeg\" ",
+      "tittle": "dgdsgdsg",
+      "subTittle": "sfsdsgsg",
+      "id": 2
+    },
+    {
+      "src": "\"assets/articles1.jpeg\" ",
+      "tittle": "dfdfgdfg",
+      "subTittle": "dfgdfgdfg",
+      "id": 3
+    },
+    {
+      "src": "\"assets/team-04.jpg\" ",
+      "tittle": "jyjyy",
+      "subTittle": "popo",
+      "id": 4
+    },
+    {
+      "src": null,
+      "tittle": null,
+      "subTittle": null,
+      "id": 5
+    },
+    {
+      "src": "vb  bc vbc b",
+      "tittle": "bvnbvn",
+      "subTittle": "bcbnvnbv",
+      "id": 6
+    },
+    {
+      "src": "bcfgf",
+      "tittle": "jhvjhv",
+      "subTittle": "bnccb",
+      "id": 7
     }
   ],
   "Articles": [
@@ -79,6 +115,41 @@
       "subTittle": null,
       "date": null,
       "id": 3
+    },
+    {
+      "src": "\"assets/articles1.jpeg\" ",
+      "tittle": "dedei",
+      "subTittle": null,
+      "date": null,
+      "id": 4
+    },
+    {
+      "src": "agsfcjchhjc",
+      "tittle": "jhzzchjazvxc",
+      "subTittle": null,
+      "date": null,
+      "id": 5
+    },
+    {
+      "src": "hVc nznx ",
+      "tittle": "zjhzxxcgchzjx",
+      "subTittle": "mnzxhcj",
+      "date": null,
+      "id": 6
+    },
+    {
+      "src": "zxvzxbjh",
+      "tittle": "zxgxcjhz",
+      "subTittle": "hzxzgxchj",
+      "date": "2022-11-24",
+      "id": 7
+    },
+    {
+      "src": "bnzxxcvbnZ",
+      "tittle": "Nbvcbzn",
+      "subTittle": "jhjvhcjh",
+      "date": "2022-11-24",
+      "id": 8
     }
   ],
   "profile": {
