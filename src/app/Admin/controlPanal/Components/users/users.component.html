@@ -4,7 +4,7 @@
             <div class="table-title table-bordered">
                 <div class="header  ">
                     <div>
-                        <h1>Users</h1>
+                        <h1>Users :</h1>
                     </div>
 
                     <div>
@@ -16,19 +16,19 @@
                 </div>
             </div>
 
-            <table class="table table-bordered table-hover  ">
+            <table class="table table-bordered table-hover  table-responsive">
                 <thead class="table-dark"> class="fs-2"
                     <tr>
-                        <th scope="col" class="fs-3">User Id</th>
-                        <th scope="col" class="fs-3">First Name</th>
-                        <th scope="col" class="fs-3">Last Name</th>
-                        <th scope="col" class="fs-3">Email</th>
-                        <th scope="col" class="fs-3">Mobil No</th>
-                        <th scope="col" class="fs-3">Salary</th>
-                        <th scope="col" class="fs-3">Action</th>
+                        <th scope="col" class="fs-5">User Id</th>
+                        <th scope="col" class="fs-5">First Name</th>
+                        <th scope="col" class="fs-5">Last Name</th>
+                        <th scope="col" class="fs-5">Email</th>
+                        <th scope="col" class="fs-5">Mobil No</th>
+                        <th scope="col" class="fs-5">Salary</th>
+                        <th scope="col" class="fs-5">Action</th>
                     </tr>
                 </thead>
-                <tbody class="table-group-divider">
+                <tbody class="table-group-divider table-responsive">
                     <tr *ngFor="let user of usersData">
                         <td class="fs-4">{{user.id}}</td>
                         <td class="fs-4">{{user.firstName}}</td>
@@ -51,19 +51,7 @@
                         </tr>
                 </tbody>
             </table>
-            <div class="clearfix text-center">
-                <div class="hint-text fs-5">Showing <b>5</b> out of <b>25</b> entries</div>
-                <ul class="pagination justify-content-center py-3">
-                    <li class="page-item "><a href="#" class="page-link ">Previous</a></li>
-                    <li class="page-item"><a href="#" class="page-link">1</a></li>
-                    <li class="page-item"><a href="#" class="page-link">2</a></li>
-                    <li class="page-item active"><a href="#" class="page-link">3</a></li>
-                    <li class="page-item"><a href="#" class="page-link">4</a></li>
-                    <li class="page-item"><a href="#" class="page-link">5</a></li>
-                    <li class="page-item"><a href="#" class="page-link">Next</a></li>
-                </ul>
-            </div>
-
+          
 
 
             <!-- Modal -->

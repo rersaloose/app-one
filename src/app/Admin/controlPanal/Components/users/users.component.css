@@ -11,9 +11,8 @@ h1 {
 }
 
 th {
-    padding: 20px;
+    padding: 10px;
     text-align: center;
-    font-size: 20px;
     font-weight: normal;
 }
 
@@ -31,6 +30,6 @@ td {
 }
 
 .tatn {
-    padding: 10px 20px;
-    margin-right: 10px;
+    padding:10px;
+
 }

@@ -2,20 +2,25 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 40px;
+    font-size: 20px;
 }
 
 ul {
     text-transform: capitalize;
 }
 
+@media( max-width:767px){
+    .header ul{
+        display: none;
+    }
+}
 a:hover {
     background-color: rgb(193, 193, 190);
 }
 
 .logo {
-    width: 100px;
-    height: 100px;
+width: 100px;
+height: 100px;
     font-size: larger;
     font-weight: bold;
 }
@@ -25,6 +30,6 @@ img {
 }
 
 .btn {
-    padding: 20px;
+    padding: 10px 20px;
     font-size: 30px;
 }

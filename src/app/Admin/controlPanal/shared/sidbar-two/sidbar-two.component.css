@@ -1,3 +1,14 @@
+
+.sidebar{
+border: 1px solid red;
+    display: grid;
+    grid-template-rows: 100%;
+grid-template-columns: repeat(2,1fr);
+align-content: space-between;
+
+
+
+}
 .nav-link:hover {
     background-color: #525252 !important;
 }
@@ -9,3 +20,9 @@
 .nav-link:hover .fa {
     transform: rotate(360deg);
 }
+
+@media( max-width:767px){
+    .sidebar{
+        display: none;
+    }
+    }

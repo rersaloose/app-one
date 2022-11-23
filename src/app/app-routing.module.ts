@@ -5,8 +5,6 @@ import { ProductComponent } from './Admin/controlPanal/Components/product/produc
 import { ControlComponent } from './Admin/controlPanal/control/control.component';
 import { LoginComponent } from './Admin/login/login/login.component';
 import { HomePageComponent } from './home/home-page/home-page.component';
-
-
 import { UsersComponent } from './Admin/controlPanal/Components/users/users.component';
 import { NgModule } from '@angular/core';
 
@@ -16,16 +14,16 @@ const routes: Routes = [
   {
     path: 'control',
     component: ControlComponent,
-    children:[
-      {path:"user", component:UsersComponent},
-      {path:"products",component:ProductComponent},
-      {path:"blog",component:BlogComponent}
+    children: [
+      { path: "user", component: UsersComponent },
+      { path: "products", component: ProductComponent },
+      { path: "blog", component: BlogComponent }
 
     ]
 
 
   },
-  {path:"Articles",component:ArticlesComponent}
+  { path: "Articles", component: ArticlesComponent }
 
 ];
 

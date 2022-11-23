@@ -29,3 +29,8 @@
     margin: 0 20px;
     font-size: 20px;
 }
+@media( max-width:767px){
+    .content .links{
+        display: none;
+    }
+}

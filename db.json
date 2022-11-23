@@ -1,14 +1,6 @@
 {
   "posts": [
     {
-      "id": 1,
-      "firstName": "Admin",
-      "lastName": "Admin",
-      "Email": "Admin@Gmail.Com",
-      "Mobil": 96623541,
-      "salary": 120.55
-    },
-    {
       "id": 2,
       "firstName": "Eslam",
       "lastName": "Esalous",
@@ -47,110 +39,113 @@
       "Email": "esdsedse@gmail.co",
       "Mobil": 1524,
       "salary": 2566
+    },
+    {
+      "id": 8,
+      "firstName": "Eslam",
+      "lastName": "Esalous",
+      "Email": "esdsedse@gmail.co",
+      "Mobil": 66575,
+      "salary": 87979
     }
   ],
   "comments": [],
   "products": [
     {
-      "src": "QDCFW",
-      "tittle": "ASDASD",
-      "subTittle": "ASD",
+      "src": "../../../../../assets/team-01.jpg",
+      "tittle": "Team one",
+      "subTittle": "Team -1",
       "id": 1
     },
     {
-      "src": "\"assets/articles1.jpeg\" ",
-      "tittle": "dgdsgdsg",
-      "subTittle": "sfsdsgsg",
+      "src": "../../../../../assets/team-02.jpg",
+      "tittle": "Team-tow",
+      "subTittle": "Team-2",
       "id": 2
     },
     {
-      "src": "\"assets/articles1.jpeg\" ",
-      "tittle": "dfdfgdfg",
-      "subTittle": "dfgdfgdfg",
-      "id": 3
+      "id": 3,
+      "src": "../../../../../assets/team-03.jpg",
+      "tittle": "Team- three",
+      "subTittle": "Team- three"
     },
     {
-      "src": "\"assets/team-04.jpg\" ",
-      "tittle": "jyjyy",
-      "subTittle": "popo",
-      "id": 4
+      "id": 4,
+      "src": "../../../../../assets/team-04.jpg",
+      "tittle": "Team- four",
+      "subTittle": "Team- 4"
     },
     {
-      "src": null,
-      "tittle": null,
-      "subTittle": null,
-      "id": 5
+      "id": 5,
+      "src": "../../../../../assets/team-05.png",
+      "tittle": "Team- Five",
+      "subTittle": "Team- 5"
     },
     {
-      "src": "vb  bc vbc b",
-      "tittle": "bvnbvn",
-      "subTittle": "bcbnvnbv",
-      "id": 6
+      "id": 6,
+      "src": "../../../../../assets/team-06.png",
+      "tittle": "Team- six",
+      "subTittle": "Team- 6"
     },
     {
-      "src": "bcfgf",
-      "tittle": "jhvjhv",
-      "subTittle": "bnccb",
-      "id": 7
+      "id": 8,
+      "src": "../../../../../assets/hgghgh.jpg",
+      "tittle": "Team- three",
+      "subTittle": "popo"
     }
   ],
   "Articles": [
     {
-      "src": "AHSHGFHASSAFASFASFASF",
-      "tittle": "ASFASFAASFAS",
-      "subTittle": null,
-      "date": null,
+      "src": "../../../../../assets/team-01.jpg",
+      "tittle": "Team- one",
+      "subTittle": "zoom",
+      "date": "2022-11-24",
       "id": 1
     },
     {
-      "src": "erererer",
-      "tittle": "uyuyuyu",
-      "subTittle": null,
-      "date": null,
+      "src": "../../../../../assets/team-02.jpg",
+      "tittle": "Team- one",
+      "subTittle": "zoom",
+      "date": "2022-11-24",
       "id": 2
-    },
-    {
-      "src": "qeqweq",
-      "tittle": "qweqweq",
-      "subTittle": null,
-      "date": null,
+    },   {
+      "src": "../../../../../assets/team-01.jpg",
+      "tittle": "Team- one",
+      "subTittle": "zoom",
+      "date": "2022-11-24",
       "id": 3
-    },
-    {
-      "src": "\"assets/articles1.jpeg\" ",
-      "tittle": "dedei",
-      "subTittle": null,
-      "date": null,
+    },   {
+      "src": "../../../../../assets/team-04.jpg",
+      "tittle": "Team- one",
+      "subTittle": "zoom",
+      "date": "2022-11-24",
       "id": 4
-    },
-    {
-      "src": "agsfcjchhjc",
-      "tittle": "jhzzchjazvxc",
-      "subTittle": null,
-      "date": null,
+    },   {
+      "src": "../../../../../assets/team-02.jpg",
+      "tittle": "Team- one",
+      "subTittle": "zoom",
+      "date": "2022-11-24",
       "id": 5
-    },
-    {
-      "src": "hVc nznx ",
-      "tittle": "zjhzxxcgchzjx",
-      "subTittle": "mnzxhcj",
-      "date": null,
+    },   {
+      "src": "../../../../../assets/team-03.jpg",
+      "tittle": "Team- one",
+      "subTittle": "zoom",
+      "date": "2022-11-24",
       "id": 6
-    },
-    {
-      "src": "zxvzxbjh",
-      "tittle": "zxgxcjhz",
-      "subTittle": "hzxzgxchj",
+    },   {
+      "src": "../../../../../assets/team-05.jpg",
+      "tittle": "Team- one",
+      "subTittle": "zoom",
       "date": "2022-11-24",
       "id": 7
-    },
-    {
-      "src": "bnzxxcvbnZ",
-      "tittle": "Nbvcbzn",
-      "subTittle": "jhjvhcjh",
+    },   {
+      "src": "../../../../../assets/team-04.jpg",
+      "tittle": "Team- one",
+      "subTittle": "zoom",
       "date": "2022-11-24",
       "id": 8
     }
+
   ],
   "profile": {
     "name": "typicode"

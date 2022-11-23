@@ -38,6 +38,8 @@ PostProduct(){
     console.log(res);
     alert("Add New Product")
     this.formValue.reset();
+    var cancel=document.getElementById("cancel");
+    cancel?.click();
 
   })
 

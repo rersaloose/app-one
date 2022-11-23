@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -22,6 +21,8 @@ import { UsersComponent } from './Admin/controlPanal/Components/users/users.comp
 import { ReactiveFormsModule } from '@angular/forms';
 import { ProductComponent } from './Admin/controlPanal/Components/product/product.component';
 import { BlogComponent } from './Admin/controlPanal/Components/blog/blog.component';
+import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
 
 
 @NgModule({
@@ -39,12 +40,9 @@ import { BlogComponent } from './Admin/controlPanal/Components/blog/blog.compone
     FooterTwoComponent,
     SidbarTwoComponent,
     SlidSectionComponent,
-
-
     UsersComponent,
     ProductComponent,
     BlogComponent,
-
 
   ],
   imports: [
@@ -55,7 +53,7 @@ import { BlogComponent } from './Admin/controlPanal/Components/blog/blog.compone
     HttpClientModule,
      NgImageSliderModule,
      ReactiveFormsModule,
-
+     CommonModule
 
   ],
   providers: [],

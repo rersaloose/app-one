@@ -8,12 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./articles.component.css']
 })
 export class ArticlesComponent implements OnInit {
-blogObject=[]
+  blogObject=[]
   constructor(private BlogService:BlogService) { }
   ngOnInit(): void {
   this.BlogService.getBlog().subscribe((e:any)=>{
-    this.blogObject=e
     console.log(e)
+    this.blogObject=e
   })
   }
 
