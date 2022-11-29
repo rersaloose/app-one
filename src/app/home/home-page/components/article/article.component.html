@@ -1,0 +1,27 @@
+<div class="row">
+    <nav class="navbar  container-fluid ps-3"  style="background-color: #e3f2fd;">
+      <div class="container">
+        <a class="navbar-brand"><strong>My Blog:</strong></a>
+      </div>
+    </nav>
+  </div>
+  <!-- Articles Body -->
+<div class="container-fluid">
+    <div class="row ">
+        <div class=" col-12 col-sm-6 col-md-4 col-lg-3 g-4 " *ngFor="let item of blogObject ">
+              <div class="card " >
+                <img [src]="item.src" class="card-img-top">
+                <div class="card-body">
+                  <h3 class="card-title">{{item.tittle}}</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit minus vel delectus accusamus, magni sed consectetur suscipit numquam praesentium perspiciatis officiis illum aliquam cumque quis sapiente esse blanditiis obcaecati impedit.</p>
+                  <p class="card-text">{{item.subTittle}}</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">{{item.date |date}}</small>
+                </div>
+              </div>
+           
+        </div>
+          
+    </div>
+</div>

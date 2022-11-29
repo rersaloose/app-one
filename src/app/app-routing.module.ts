@@ -1,4 +1,4 @@
-import { ArticlesComponent } from './home/home-page/components/Articles/Articles.component';
+
 import { BlogComponent } from './Admin/controlPanal/Components/blog/blog.component';
 import { RouterModule, Routes } from '@angular/router';
 import { ProductComponent } from './Admin/controlPanal/Components/product/product.component';
@@ -7,6 +7,7 @@ import { LoginComponent } from './Admin/login/login/login.component';
 import { HomePageComponent } from './home/home-page/home-page.component';
 import { UsersComponent } from './Admin/controlPanal/Components/users/users.component';
 import { NgModule } from '@angular/core';
+import { ArticleComponent } from './home/home-page/components/article/article.component';
 
 const routes: Routes = [
   { path: '', component: HomePageComponent },
@@ -23,7 +24,7 @@ const routes: Routes = [
 
 
   },
-  { path: "Articles", component: ArticlesComponent }
+  { path: "Articles", component: ArticleComponent }
 
 ];
 

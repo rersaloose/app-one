@@ -14,7 +14,7 @@ export class BlogComponent implements OnInit {
   blogData:any;
   showAdd!:boolean;
   showUpdate!:boolean
-  constructor(private FormBuilder:FormBuilder, private BlogService:BlogService ) { }
+  constructor(private FormBuilder:FormBuilder, private BlogService:BlogService) { }
 
   ngOnInit(): void {
     this.formValue= this.FormBuilder.group({
@@ -35,10 +35,8 @@ this.blogObject.src=this.formValue.value.Src;
 this.blogObject.tittle=this.formValue.value.tittle;
 this.blogObject.subTittle=this.formValue.value.subTittle;
 this.blogObject.date=this.formValue.value.date;
-console.log(this.blogObject)
 
 this.BlogService.postBlog(this.blogObject).subscribe((e:any)=>{
-  console.log(e)
   alert("your blog is add")
   this.formValue.reset();
   var cancel=document.getElementById("cancel");
@@ -75,11 +73,9 @@ this.BlogService.updatBlog(this.blogObject,this.blogObject.id).subscribe((e:any)
   cancel?.click();
   this.Getblog();
 })}
-
 Deleteblog(blog:BlogArticles){
   this.BlogService.deleteBlog(blog.id).subscribe((e:any)=>{
     alert('Your Blog is Deleted')
-
     this.Getblog()
   })
 }

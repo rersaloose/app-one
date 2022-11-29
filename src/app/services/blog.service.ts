@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { map } from 'rxjs';
+import { map, Observable } from 'rxjs';
+import { BlogArticles } from '../home/home-page/components/Model/Blog-Articles';
 
 @Injectable({
   providedIn: 'root'
@@ -15,8 +16,8 @@ export class BlogService {
     }))
 
   }
-getBlog(){
-  return this.http.get<any>(" http://localhost:3000/Articles")
+getBlog():Observable<BlogArticles>{
+  return this.http.get<BlogArticles[]>(" http://localhost:3000/Articles")
   .pipe(map((res:any)=>{
     return res;
   }))

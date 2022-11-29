@@ -1,6 +1,10 @@
+import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BlogComponent } from './Admin/controlPanal/Components/blog/blog.component';
+
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomePageComponent } from './home/home-page/home-page.component';
@@ -20,13 +24,12 @@ import { SlidSectionComponent } from './home/home-page/components/slider-section
 import { UsersComponent } from './Admin/controlPanal/Components/users/users.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ProductComponent } from './Admin/controlPanal/Components/product/product.component';
-import { BlogComponent } from './Admin/controlPanal/Components/blog/blog.component';
-import { BrowserModule } from '@angular/platform-browser';
-import { CommonModule } from '@angular/common';
+import { ArticleComponent } from './home/home-page/components/article/article.component';
 
 
 @NgModule({
   declarations: [
+
     AppComponent,
     HomePageComponent,
     HeaderComponent,
@@ -43,6 +46,8 @@ import { CommonModule } from '@angular/common';
     UsersComponent,
     ProductComponent,
     BlogComponent,
+    ArticleComponent,
+   
 
   ],
   imports: [
