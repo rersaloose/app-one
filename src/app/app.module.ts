@@ -25,6 +25,7 @@ import { UsersComponent } from './Admin/controlPanal/Components/users/users.comp
 import { ReactiveFormsModule } from '@angular/forms';
 import { ProductComponent } from './Admin/controlPanal/Components/product/product.component';
 import { ArticleComponent } from './home/home-page/components/article/article.component';
+import { ProductDetailsComponent } from './Admin/controlPanal/Components/product-details/product-details.component';
 
 
 @NgModule({
@@ -47,6 +48,7 @@ import { ArticleComponent } from './home/home-page/components/article/article.co
     ProductComponent,
     BlogComponent,
     ArticleComponent,
+    ProductDetailsComponent,
    
 
   ],

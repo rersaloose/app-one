@@ -1,24 +1,24 @@
-<div class="d-flex flex-column vh-100  text-white bg-dark  side-responsive">
+ <div class="d-flex flex-column vh-100  text-white bg-dark sidebar ">
     <a href="/" class="d-flex justify-content-center align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
         <svg class="bi me-2" width="10" height="40"> </svg>
-        <span class="fs-3">ControlPanel</span> </a>
+        <!-- <i class="fa fa-solid fa-bars " width="10" height="40" ></i>  -->
+
+        <span class="fs-5">ControlPanel</span> </a>
     <hr>
     <ul class="nav nav-pills flex-column mb-auto">
         <li class="nav-item">
-            <a class="nav-link active" > <i class="fa fa-home"></i><span >Home</span> </a>
+            <a class="nav-link  text-white" href="#" routerLinkActive="active"> <i class="fa fa-home"></i><span class="ms-2" >Home</span> </a>
         </li>
         <li>
-            <a routerLink="user" class="nav-link text-white"> <i class="fa fa-thin fa-user"></i><span class="ms-2">Users</span> </a>
+            <a routerLink="user" routerLinkActive="active" class="nav-link text-white"> <i class="fa fa-thin fa-user"></i><span class="ms-2">Users</span> </a>
         </li>
         <li>
-            <a routerLink="products" class="nav-link text-white"><i class="fa fa-thin fa-sort"></i><span class="ms-2">My Products:</span> </a>
+            <a routerLink="products" routerLinkActive="active" class="nav-link text-white"><i class="fa fa-thin fa-sort"></i><span class="ms-2">My Products:</span> </a>
         </li>
         <li>
-            <a routerLink="blog" class="nav-link text-white"> <i class="fa fa-cog"></i><span class="ms-2">My Blogs</span> </a>
+            <a routerLink="blog"  routerLinkActive="active" class="nav-link text-white"> <i class="fa fa-cog"></i><span class="ms-2">My Blogs</span> </a>
         </li>
-        <li>
-            <a href="#" class="nav-link text-white"> <i class="fa fa-bookmark"></i><span class="ms-2">Bookmarks</span> </a>
-        </li>
+      
     </ul>
     <hr>
     <div class="dropdown">
@@ -31,5 +31,5 @@
                 <hr class="dropdown-divider"> </li>
             <li><a class="dropdown-item" href="#">Sign out</a></li>
         </ul>
-    </div>
-</div>
+    </div> 
+</div> 

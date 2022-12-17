@@ -2,6 +2,7 @@ import { ProService } from '../../../../services/product.service';
 import { Product } from './../../../../home/home-page/components/Model/Products';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-product',
@@ -15,7 +16,7 @@ proObject:Product=new Product()
 proData:any;
 showAdd!:boolean;
 showUpdate!:boolean
-  constructor(private Fb:FormBuilder ,private ProService:ProService ) { }
+  constructor(private Fb:FormBuilder ,private ProService:ProService ,private router:Router ) { }
 
   ngOnInit(): void {
     this.formValue=this.Fb.group({
@@ -80,4 +81,8 @@ DeletePro(pro:Product){
   })
 
 }
+// openPid(pid:number){
+// this.router.navigate(["/products",pid])
+ 
+// }
 }

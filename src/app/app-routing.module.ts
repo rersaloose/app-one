@@ -8,22 +8,27 @@ import { HomePageComponent } from './home/home-page/home-page.component';
 import { UsersComponent } from './Admin/controlPanal/Components/users/users.component';
 import { NgModule } from '@angular/core';
 import { ArticleComponent } from './home/home-page/components/article/article.component';
+import { ProductDetailsComponent } from './Admin/controlPanal/Components/product-details/product-details.component';
 
 const routes: Routes = [
   { path: '', component: HomePageComponent },
+
   { path: 'login', component: LoginComponent },
   {
     path: 'control',
     component: ControlComponent,
     children: [
+  
       { path: "user", component: UsersComponent },
       { path: "products", component: ProductComponent },
+     
       { path: "blog", component: BlogComponent }
-
-    ]
-
+]
 
   },
+  { path: "products/:pid", component: ProductDetailsComponent },
+
+
   { path: "Articles", component: ArticleComponent }
 
 ];

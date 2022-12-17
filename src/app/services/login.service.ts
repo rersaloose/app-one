@@ -13,7 +13,9 @@ export class LoginService {
   login(email:string,password:string):Observable<any>{
     var headers= new HttpHeaders();
     headers.append("Access-Control-Allow-Origin","*")
-    return this.http.post(`${this.basurl}/auth/tokens`,{"Email":email,"Password":password},{ headers:headers,observe:"response"})
+    return this.http.post(`${this.basurl}/auth/tokens`,
+    {"Email":email,"Password":password},
+    { headers:headers,observe:"response"})
   }
 }
 

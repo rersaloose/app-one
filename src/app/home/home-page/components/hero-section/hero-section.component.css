@@ -2,3 +2,16 @@ img {
     width: 100%;
     background-size: auto;
 }
+.carousel-caption{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+}
+.carousel-caption h1{
+font-size: 30px;
+color: #eee;
+padding: 20px 0 ;
+
+}
+    
