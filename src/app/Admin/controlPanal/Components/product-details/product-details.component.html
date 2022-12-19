@@ -14,7 +14,11 @@
                 <div class="card-body">
                   <h3 class="card-title">{{productId.tittle}}</h3>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit minus vel delectus accusamus, magni sed consectetur suscipit numquam praesentium perspiciatis officiis illum aliquam cumque quis sapiente esse blanditiis obcaecati impedit.</p>
-                 
+                  <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                    <button type="button" class="btn btn-danger"(click)="Prev()" >Prev</button>
+                    <button type="button" class="btn btn-warning" (click)="BACK()" >BACK</button>
+                    <button type="button" class="btn btn-success" (click)="Next()" >Next</button>
+                  </div>
                 </div>
                 <div class="card-footer ">
                     <p class="card-text">{{productId.subTittle}}</p>
