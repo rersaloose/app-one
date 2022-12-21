@@ -1,4 +1,3 @@
-
 import { BlogComponent } from './Admin/controlPanal/Components/blog/blog.component';
 import { RouterModule, Routes } from '@angular/router';
 import { ProductComponent } from './Admin/controlPanal/Components/product/product.component';
@@ -18,23 +17,18 @@ const routes: Routes = [
     path: 'control',
     component: ControlComponent,
     children: [
-  
-      { path: "user", component: UsersComponent },
-      { path: "products", component: ProductComponent },
-     
-      { path: "blog", component: BlogComponent }
-]
-
+      { path: 'user', component: UsersComponent },
+      { path: 'products', component: ProductComponent },
+      { path: 'products/:pid', component: ProductDetailsComponent },
+      { path: 'blog', component: BlogComponent },
+    ],
   },
-  { path: "products/:pid", component: ProductDetailsComponent },
 
-
-  { path: "Articles", component: ArticleComponent }
-
+  { path: 'Articles', component: ArticleComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

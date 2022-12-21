@@ -1,12 +1,17 @@
-.container{
+.text{
+  width: 400px;
   
-    
+  margin: auto;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* text-align: center; */
 }
 .product{
-    text-align: center;
-  margin: 20px;
-  width: 400px;
-  height: 400px;
+  text-align: center;
+  width: 300px;
+  height: auto;
   margin: auto;
-  margin-top: 20px;
+
 }
