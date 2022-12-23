@@ -16,10 +16,10 @@ proObject:Product=new Product()
 proData:any;
 showAdd!:boolean;
 showUpdate!:boolean
-  constructor(private Fb:FormBuilder ,private ProService:ProService ,private router:Router ) { }
+  constructor(private formbuilder:FormBuilder ,private ProService:ProService ,private router:Router ) { }
 
   ngOnInit(): void {
-    this.formValue=this.Fb.group({
+    this.formValue=this.formbuilder.group({
      Src:[""],
      tittle:[""],
      subTittle:[""],

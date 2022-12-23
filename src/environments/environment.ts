@@ -4,6 +4,7 @@
 
 export const environment = {
   baseURL:"https://api.dev.qhslab.com/v1.0",
+  baseicUrl:"http://localhost:3000/",
   production:false,
 
 };

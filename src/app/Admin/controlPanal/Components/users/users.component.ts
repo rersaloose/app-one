@@ -1,7 +1,8 @@
 import { UsersModal } from '../../../../home/home-page/components/Model/Users.Modal';
-import { APIService } from '../../../../services/api.service';
+
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder } from '@angular/forms';
+import { userService } from 'src/app/services/user.service';
 
 @Component({
   selector: 'app-users',
@@ -11,10 +12,10 @@ import { FormGroup, FormBuilder } from '@angular/forms';
 export class UsersComponent implements OnInit {
   formValue!: FormGroup;
   usersObject: UsersModal = new UsersModal();
-  usersData!: any;
-  showAdd!: boolean;
-  showUpdate!: boolean;
-  constructor(private formBuilder: FormBuilder, private api: APIService) {}
+  usersData: any;
+  showAdd: boolean=false;
+  showUpdate: boolean=false;
+  constructor(private formBuilder: FormBuilder, private api: userService) {}
 
   ngOnInit(): void {
     this.formValue = this.formBuilder.group({
