@@ -24,11 +24,10 @@ td {
     text-align: center;
     font-size: 20px;
 }
-
 img {
-    width: 100%;
-}
-
+    width: 70px;
+    height: 70px;
+  }
 .create {
     padding: 15px 10px;
     font-size: 20px;

@@ -17,7 +17,7 @@ export class ProductDetailsComponent implements OnInit {
   constructor(
     private ActivatedRouter: ActivatedRoute,
     private product: ProService,
-    private location: Location,
+
     private router: Router
   ) {}
 
@@ -29,31 +29,24 @@ export class ProductDetailsComponent implements OnInit {
       this.product.getProductByid(this.currntPid).subscribe((e) => {
         this.productId = e;
       });
-    
     });
-
-
-
   }
 
   Prev() {
-
     if (this.productId.id > 0) {
       var prevId = this.productId.id - 1;
-      // console.log(prevId);
-      // this.product.getProductByid(prevId)
+
       this.router.navigate(['/control/products/', prevId]);
     }
   }
 
   BACK() {
-    // this.location.back()
-    this.router.navigate(["/"])
+    this.router.navigate(['/']);
   }
 
   Next() {
     var nextId = this.productId.id + 1;
-    // this.product.getProductByid(nextId)
+
     this.router.navigate(['/control/products', nextId]);
     console.log(nextId);
   }
